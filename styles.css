@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Kalam&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+  background-color: #2A9D8F;
+  color: white;
+  font-family: 'Acme', sans-serif;
+  padding: 1em;
+}
+
+#content {
+  max-width: 80%;
+  margin: 0 auto;
+  /*border: 2px solid #2a9d8f;
+  border-radius: 50px 50px 0 0;*/
+}
+
+.logo-box {
+  background-color:white;
+  border: 2px solid #2a9d8f;
+  border-radius: 50px 50px 0 0;
+  padding: 0.5em;
+}
+
+.logo-box img {
+  width: 100%;
+  margin-left: 5px;
+  margin-bottom: -5px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 110px auto;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+  margin: 0;  
+}
+
+nav a:hover { 
+  text-decoration: none;
+  color: #2A9D8F;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.home-headline-1 {
+  margin-bottom: -10px;
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.home-paragraph-1 {
+  padding: 1em;
+  margin: 0px;
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+
+.home-right-img {
+  
+  grid-column: 4/6;
+  grid-row: 1/3;
+}
+
+.home-headline-2 {
+  margin-bottom: -10px;
+  grid-column: 3/6;
+  grid-row: 4/5;
+}
+
+.home-paragraph-2 {
+  padding: 1em;
+  margin: 0px;
+  grid-column: 4/6;
+  grid-row: 5/7;
+}
+
+.home-left-img {
+  margin-left: 10px;
+  grid-column: 1/3;
+  grid-row: 4/6;
+}
+
+.home-paragraph-3 {
+  text-align: center;
+  padding: 1em;
+  grid-column: 1/6;
+  grid-row: 7/8;
+}
+
+.home-left-img,
+.home-right-img {
+  max-width: 90%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 5px 5px 5px #999;
+}
+
+body {
+  background-color: #0e1a1f;
+  font-family: 'Kalam', cursive;
+}
+
+nav a {
+  color: #ffde47;
+  font-size: 1.1em;
+}
+
+main {
+  background-color: white;
+  border: 2px solid #2a9d8f;
+  /*border-radius: 50px 50px 0 0;*/
+}
+
+.banner-box img {
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 55px;
+}
+
+.social {
+  grid-column: 2/3;
+  padding: 1em;
+  text-align: right;
+  margin-top: -8px;
+  margin-right: -10px;
+}
+
+.social img {
+  height: 40px;  
+}
+
+footer p {
+  grid-column: 1/2;
+  text-align: left;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 550px) { 
+/* beginning of media query */
+    .home-grid {
+    display: block;
+    }
+    
+/* end of media query */ 
+} 
+
+/*CSS for FAQ page below*/
+
+.answer p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
