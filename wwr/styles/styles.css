@@ -15,11 +15,6 @@
   border-radius: 50px 50px 0 0;*/
 }
 
-.banner-box img {
-  text-align: center;
-  width: 100%;
-}
-
 .logo-box {
   background-color:white;
   border: 2px solid #2a9d8f;
@@ -255,4 +250,9 @@ footer a:hover {
 .answer p {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.banner-box img {
+  text-align: center;
+  width: 100%;
 }
