@@ -17,19 +17,21 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="dinner-recipes.html">Dinner Recipes</a></li>
-            <li><a href="help.html">Help</a></li>
+            <li><a href="help.html">Help in the Kitchen</a></li>
           </ul>
       </nav>
   </header>
 
+<main>
+   <div class="dinner-recipes-banner">
+      <img src="images/image02.jpg" alt="banner">
+    </div>
 
-
-
-
-
-
-
-
+   <button type="button" class="collapsible" onclick="myFunction()">Open Collapsible</button>
+   <div class="content">
+      <p>Lorem ipsum...</p>
+   </div>
+</main>
    <footer>
       <h3>Mm-mmm Real Good &copy; 2022 - Brandon Wise</h3>
       <h3><a href="site-plan.html">Site Plan</a></h3>
@@ -39,5 +41,25 @@
          <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter button"></a>
       </div>
    </footer>
+
+   <script>
+      function myFunction() {
+         var coll = document.getElementsByClassName("collapsible");
+         var i;
+
+         for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+               this.classList.toggle("active");
+               var content = this.nextElementSibling;
+               if (content.style.display === "block") {
+                  content.style.display = "none";
+               } else {
+                  content.style.display = "block";
+               }
+            });
+}
+      }
+   </script>
+
 </body>
 </html>
