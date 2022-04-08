@@ -28,14 +28,14 @@ header {
  nav ul {
    list-style: none;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(5em, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
    margin: 0;
    background-color: #BDD4F2;
  }
  
  nav a:hover { 
    text-decoration: none;
-   color: #2A9D8F;
+   color: #64A4F8;
  }
  
  #hero {
@@ -65,4 +65,35 @@ header {
  
  #hero-msg h1, p, a {
    color: white;
+ }
+
+ footer {
+   display: flex;
+   background-color: #BDD4F2;
+   padding: 25px 50px;
+   margin-top: 100px;
+   justify-content: space-around;
+   align-items: center;
+   height: 55px;
+ }
+ 
+ footer a {
+   color: black;
+ }
+ 
+ footer a:hover { 
+   text-decoration: none;
+   color: white;
+ }
+ 
+ .social {
+   grid-column: 2/3;
+   padding: 1em;
+   text-align: right;
+   margin-top: -8px;
+   margin-right: -10px;
+ }
+ 
+ .social img {
+   height: 40px;  
  }
